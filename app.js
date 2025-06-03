@@ -1,5 +1,5 @@
-const clientId = "YOUR_CLIENT_ID";
-const accessToken = "YOUR_ACCESS_TOKEN";
+const clientId = "p0hejdfujchg7j5vax0ghgpfgiasqo";
+const accessToken = "cfzn8c0yjyw28ndkzsc90xkkw4nwxy";
 const channels = [
   "sunniep", "xqc", "pokimane", "shroud",
   "valkyrae", "myreshatv", "kai_cenat", "fuslie"

@@ -1,0 +1,41 @@
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#stream-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.stream-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+}
+
+.stream-embed, .chat-embed {
+  flex: 1 1 50%;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-width: 300px;
+}
+
+.stream-embed iframe,
+.chat-embed iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

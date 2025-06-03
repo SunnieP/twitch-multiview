@@ -16,20 +16,26 @@ body {
 
 .stream-wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   background: #1e1e1e;
   border-radius: 12px;
   overflow: hidden;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
+  height: auto;
 }
 
-.stream-embed, .chat-embed {
-  flex: 1 1 50%;
+.stream-embed {
+  flex: 2;
   position: relative;
   aspect-ratio: 16 / 9;
   min-width: 300px;
+}
+
+.chat-embed {
+  flex: 1;
+  position: relative;
+  aspect-ratio: 9 / 16;
+  min-width: 200px;
 }
 
 .stream-embed iframe,
@@ -39,3 +45,15 @@ body {
   height: 100%;
   border: none;
 }
+
+@media (max-width: 700px) {
+  .stream-wrapper {
+    flex-direction: column;
+  }
+  .stream-embed,
+  .chat-embed {
+    flex: none;             /* children now just auto-size */
+    width: 100%;            /* full width of wrapper */
+    aspect-ratio: 16 / 9;   /* both stream and chat fill full width horizontally */
+  }
+  }

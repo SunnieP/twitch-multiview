@@ -12,7 +12,7 @@ channels.forEach((channel) => {
   streamDiv.className = "stream-embed";
 
   const iframe = document.createElement("iframe");
-  iframe.src = `https://player.twitch.tv/?channel=${channel}&parent=localhost&autoplay=false`;
+  iframe.src = `https://player.twitch.tv/?channel=$parent=SunnieP.github.io&parent=localhost&autoplay=false`;
   iframe.allowFullscreen = true;
 
   streamDiv.appendChild(iframe);
